@@ -62,6 +62,7 @@ class CreateStringAnalysisView(GenericAPIView):
         filters = request.query_params
         filters = filters.copy()
         print(filters)
+        
         try:
             valid_query_pararmeters = ["is_palindrome", "min_length", "max_length", "word_count", "contains_character"]
 
